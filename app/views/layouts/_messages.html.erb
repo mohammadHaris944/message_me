@@ -1,0 +1,9 @@
+<% flash.each do |message_type,message_content|%>
+
+ <div class="ui <%= message_type %> message transition">    <!--from official documentation error and success classes are like this ui success mesage and in our case success and error are in message_type-->
+    <i class="close icon"></i>
+    <div class="header">
+      <%= message_content %>
+    </div>
+  </div>
+<% end %>
